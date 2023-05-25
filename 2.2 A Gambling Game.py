@@ -3,13 +3,13 @@ import random
 
 total_cost = 0
 total_income = 0
-n_simulatio = 100
+n_simulation = 100
 
-for game in range(n_simulatio):
+for game in range(n_simulation):
     sl_no = 0
     head = 0
     tail = 0
-    while(True):
+    while (True):
         sl_no += 1
         total_cost += 1
         r_num = random.randint(0, 9)
@@ -24,7 +24,7 @@ for game in range(n_simulatio):
         if (dif == 3):
             print("Win 8 dollar cost", sl_no, "dollar")
             total_income += 8
-            break;
+            break
 
-print('Total Cost:',total_cost," Total Income:",total_income)
-print("Each game on the average", math.ceil(total_cost/n_simulatio), "flip needed to win 8 dollar")
+print('Total Cost:', total_cost, " Total Income:", total_income)
+print("Each game on the average", math.ceil(total_cost/n_simulation), "flip needed to win 8 dollar")
